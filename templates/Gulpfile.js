@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     sass = require('gulp-sass');
 
-//Tâche LiveReload du plugin gulp-connect
-//Qui permet de créer un serveur de test en local
+//Tache LiveReload du plugin gulp-connect
+//Qui permet de creer un serveur de test en local
 gulp.task('connect', function() {
     connect.server({
         root: './',
