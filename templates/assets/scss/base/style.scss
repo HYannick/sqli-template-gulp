@@ -1,0 +1,40 @@
+//variables
+
+$main-color: #1d1d1b;
+$red-1 : #DB1014;
+
+@mixin translate($x,$y){
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+.centered{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%,-50%);
+}
+body{
+  background: $main-color;
+  font-family: sans-serif;
+  .intro{
+    background: #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 30px;
+  }
+  h1{
+    color: $red-1;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+  }
+  p{
+    margin: 0;
+    text-align: center;
+  }
+}
